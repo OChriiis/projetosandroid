@@ -1,4 +1,3 @@
-
 <!--    ctrl + / para comentar -->
 
 <resources>
@@ -10,7 +9,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-<!--    Estilo textos usados como título-->
+    <!--    Estilo textos usados como título-->
 
     <style name="text_title" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/colorPrimaryDark</item>
@@ -20,8 +19,7 @@
         <item name="cardCornerRadius">16dp</item>
     </style>
 
-<!--    Estilo para labels background escuros -->
-
+    <!--    Estilo para labels background escuros -->
 
 
     <style name="label_dark_background" parent="TextAppearance.AppCompat.Medium">

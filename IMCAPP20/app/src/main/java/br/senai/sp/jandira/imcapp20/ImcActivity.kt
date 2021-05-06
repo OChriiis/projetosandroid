@@ -13,22 +13,22 @@ class ImcActivity : AppCompatActivity() {
 
         val btnCalcular: Button = findViewById(R.id.button_calcular_imc)
         val edPeso: EditText = findViewById(R.id.ed_peso)
-        val edAltura:EditText = findViewById(R.id.ed_altura)
+        val edAltura: EditText = findViewById(R.id.ed_altura)
 
         btnCalcular.setOnClickListener {
-            if (edPeso.text.isEmpty()){
+            if (edPeso.text.isEmpty()) {
                 edPeso.error = "Este campo é obrigatório!"
             }
 
-            if (edAltura.text.isEmpty())
-            {
+            if (edAltura.text.isEmpty()) {
                 edAltura.error = "Este campo é obrigatório!"
             }
 
-            if (edPeso.text.isNotEmpty() && edAltura.text.isNotEmpty()){
+            if (edPeso.text.isNotEmpty() && edAltura.text.isNotEmpty()) {
 
-                val peso:Double = edPeso.text.toString().toDouble()
-                val altura:Double = edAltura.text.toString().toDouble()
+                val peso: Double = edPeso.text.toString().toDouble()
+                val altura: Double = edAltura.text.toString().toDouble()
+
 
                 val intent = Intent(this, ResulatdoImcActivity::class.java)
                 intent.putExtra("peso", peso)
