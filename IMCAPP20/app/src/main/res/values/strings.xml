@@ -7,13 +7,20 @@
     <string name="calcular_imc">Calcular IMC</string>
     <string name="resultado">Resultado:</string>
     <string name="aqui_ser_exibido_o_resultado_do_imc">AQUI SERÁ EXIBIDO O RESULTADO DO IMC</string>
+    <string name="calcular_ncd">Calcular NCD</string>
 
-    <string-array name="estados">
-        <item>São Paulo</item>
-        <item>Pernambuco</item>
-        <item>Rio Grande do Sul</item>
-        <item>Rio de Janeiro</item>
-        <item>Natal</item>
+    <string-array name="idades">
+        <item>Selecione uma das opções</item>
+        <item>Entre 18 e 30 anos</item>
+        <item>Entre 31 e 60 anos</item>
+        <item>Acima de 60 anos</item>
+    </string-array>
+
+    <string-array name="nivelAtividade">
+        <item>Selecione uma das opções</item>
+        <item>Atividade leve</item>
+        <item>Atividade Moderada</item>
+        <item>Atividade Intensa</item>
     </string-array>
 
 </resources>
