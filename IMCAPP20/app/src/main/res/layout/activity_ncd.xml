@@ -83,13 +83,14 @@
                         android:textSize="20sp" />
 
                     <RadioButton
-
+                        android:id="@+id/Feminino"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Feminino"
                         android:textColor="@android:color/white" />
 
                     <RadioButton
+                        android:id="@+id/Masculino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Masculino"
@@ -135,7 +136,7 @@
                     android:layout_marginBottom="48dp"
                     android:background="@drawable/button_background"
                     android:text="Calcular NCD!"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"/>
 
             </LinearLayout>
 
