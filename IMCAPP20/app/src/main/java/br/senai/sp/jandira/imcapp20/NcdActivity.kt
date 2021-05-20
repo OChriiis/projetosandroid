@@ -15,8 +15,12 @@ class NcdActivity : AppCompatActivity() {
         val spinnerIdade: Spinner = findViewById(R.id.spinner_idade)
         val spinnerNvlAtv: Spinner = findViewById(R.id.spinner_nvl_atv)
         val radiogroup: RadioGroup = findViewById(R.id.radio_group)
+        val rbFeminino: RadioButton = findViewById(R.id.)
 
         val itemSelecionado = radiogroup.checkedRadioButtonId
+
+        val spinnerSlcIdade = spinnerIdade.selectedItem.toString()
+        val spinnerSlcNvlAtv = spinnerNvlAtv.selectedItem.toString()
         val spinnerSelecionadoNvlAtv = spinnerNvlAtv.selectedItemPosition
         val spinnerSelecionadoIdade = spinnerIdade.selectedItemPosition
 
@@ -24,18 +28,17 @@ class NcdActivity : AppCompatActivity() {
             if (ed_peso.text.isEmpty()) {
                 ed_peso.error = "Este campo é obrigatório!"
             }
-            if (itemSelecionado == -1){
-                Toast.makeText(this, "Selecione um sexo!", Toast.LENGTH_SHORT).show()
+            if (radioFeminino.isChecked()){
+                val genero = 'f'
+                intent.putExtra("genero", genero)
+            }else{
+                val genero = 'm'
+                intent.putExtra("genero", genero)
             }
-            if (spinnerSelecionadoNvlAtv == 0){
-                Toast.makeText(this, "Selecione um nivel de atividade!", Toast.LENGTH_SHORT).show()
-            }
-            if (spinnerSelecionadoIdade == 0){
-                Toast.makeText(this, "Selecione uma faixa de idade!", Toast.LENGTH_SHORT).show()
-            }
-            if (ed_peso.text.isNotEmpty()) {
-
-                val peso: Double = ed_peso.text.toString().toDouble()
+            intent.putExtra("peso", peso)
+            intent.putExtra("nivelAtividade", nivelAtividade)
+            intent.putExtra("faixaIdade", faixaEtaria)
+            startActivity(intent)
 
             }
         }

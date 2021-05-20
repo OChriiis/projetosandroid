@@ -5,15 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideInset">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@color/backgroundColor"
         android:orientation="vertical"
-        tools:context=".ResulatdoImcActivity">
+        tools:context=".ResultadoNcdActivity">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -34,8 +36,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:importantForAutofill="auto"
                     android:paddingTop="10dp"
-                    android:text="@string/resultado"
+                    android:text="@string/resultadoncd"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textSize="24sp" />
 
@@ -54,7 +58,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/text_view_imc"
+                            android:id="@+id/text_view_ncd"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -63,25 +67,15 @@
                             android:textColor="@android:color/white" />
 
                         <TextView
-                            android:id="@+id/text_view_status"
+                            android:id="@+id/text_view_status_ncd"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Peso Ideal!"
+                            android:text="Calorias por dia."
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorAccent" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/text_view_frase_status"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|center_horizontal"
-                    android:layout_marginTop="18dp"
-                    android:gravity="center"
-                    android:text="Aqui sera exibido o resultado do imc" />
-
 
             </LinearLayout>
 
@@ -100,7 +94,7 @@
             android:textSize="32sp" />
 
         <TextView
-            android:id="@+id/text_view_dica"
+            android:id="@+id/text_view_dica_ncd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -108,7 +102,7 @@
             android:padding="40dp"
             android:text="Alimente-se melhor (1) Reduza alimentos com gordura, açúcar e sal. Tenha sempre frutas, verduras e legumes na alimentação diária."
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 
