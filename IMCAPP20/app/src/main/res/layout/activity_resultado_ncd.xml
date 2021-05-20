@@ -32,12 +32,13 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center"
                     android:layout_marginTop="32dp"
                     android:paddingTop="10dp"
-                    android:text="@string/resultado"
+                    android:text="Seu gasto calórico diário é de aprox.:"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:gravity="center"/>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="180dp"
@@ -54,7 +55,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/text_view_imc"
+                            android:id="@+id/text_view_ncd"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -66,21 +67,12 @@
                             android:id="@+id/text_view_status"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Peso Ideal!"
+                            android:text="Calorias por dia."
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorAccent" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/text_view_frase_status"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|center_horizontal"
-                    android:layout_marginTop="18dp"
-                    android:gravity="center"
-                    android:text="Aqui sera exibido o resultado do imc" />
 
 
             </LinearLayout>

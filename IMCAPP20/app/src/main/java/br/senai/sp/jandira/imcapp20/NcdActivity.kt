@@ -1,5 +1,6 @@
 package br.senai.sp.jandira.imcapp20
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -12,33 +13,49 @@ class NcdActivity : AppCompatActivity() {
         setContentView(R.layout.activity_ncd)
 
         val btnCalcular: Button = findViewById(R.id.button_calcular_ncd)
+        val edPeso: EditText = findViewById(R.id.ed_peso)
         val spinnerIdade: Spinner = findViewById(R.id.spinner_idade)
         val spinnerNvlAtv: Spinner = findViewById(R.id.spinner_nvl_atv)
         val radiogroup: RadioGroup = findViewById(R.id.radio_group)
+        val radioFeminino: RadioButton = findViewById(R.id.Feminino)
+        val radioMasculino: RadioButton = findViewById(R.id.Masculino)
 
-        val itemSelecionado = radiogroup.checkedRadioButtonId
-        val spinnerSelecionadoNvlAtv = spinnerNvlAtv.selectedItemPosition
-        val spinnerSelecionadoIdade = spinnerIdade.selectedItemPosition
+
 
         btnCalcular.setOnClickListener {
-            if (ed_peso.text.isEmpty()) {
-                ed_peso.error = "Este campo é obrigatório!"
+            if (edPeso.text.isEmpty()) {
+                edPeso.error = "Este campo é obrigatório!"
             }
-            if (itemSelecionado == -1){
-                Toast.makeText(this, "Selecione um sexo!", Toast.LENGTH_SHORT).show()
-            }
-            if (spinnerSelecionadoNvlAtv == 0){
-                Toast.makeText(this, "Selecione um nivel de atividade!", Toast.LENGTH_SHORT).show()
-            }
-            if (spinnerSelecionadoIdade == 0){
-                Toast.makeText(this, "Selecione uma faixa de idade!", Toast.LENGTH_SHORT).show()
-            }
-            if (ed_peso.text.isNotEmpty()) {
 
-                val peso: Double = ed_peso.text.toString().toDouble()
+            if (edPeso.text.isNotEmpty()) {
+
+                val peso: Double = edPeso.text.toString().toDouble()
+                val NvlAtv = spinnerNvlAtv.selectedItemPosition
+                val Idade = spinnerIdade.selectedItemPosition
+                val intent = Intent(this, ResultadoNcdActivity::class.java)
+
+                intent.putExtra("peso", peso)
+                intent.putExtra("nivelAtividade", NvlAtv)
+                intent.putExtra("faixaIdade", Idade)
+
+                if (radioFeminino.isChecked) {
+                    val genero = 'f'
+                    intent.putExtra("genero", genero)
+
+                    startActivity(intent)
+
+                } else if (radioMasculino.isChecked) {
+                    val genero = 'm'
+                    intent.putExtra("genero", genero)
+
+                    startActivity(intent)
+
+                } else {
+                    Toast.makeText(this, "Escolha o seu sexo!", Toast.LENGTH_SHORT).show()
+                }
 
             }
+
         }
-
     }
 }

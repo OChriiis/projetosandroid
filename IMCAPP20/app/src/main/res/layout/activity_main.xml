@@ -15,7 +15,8 @@
         android:gravity="center"
         android:text="@string/main_title"
         android:textAppearance="@style/text_title"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:layout_margin="10dp"/>
 
     <TextView
         style="@style/TextAppearance.AppCompat.Medium"
