@@ -6,6 +6,7 @@
     <string name="text_fazer_hoje">Me diga, o que você deseja fazer hoje?</string>
     <string name="calcular_imc">Calcular IMC</string>
     <string name="resultado">Resultado:</string>
+    <string name="resultadoncd">Você precisa consumir aproximadamente:</string>
     <string name="aqui_ser_exibido_o_resultado_do_imc">AQUI SERÁ EXIBIDO O RESULTADO DO IMC</string>
     <string name="calcular_ncd">Calcular NCD</string>
 

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@color/backgroundColor"
         android:orientation="vertical"
         tools:context=".ResulatdoImcActivity">
 
@@ -108,7 +108,7 @@
             android:padding="40dp"
             android:text="Alimente-se melhor (1) Reduza alimentos com gordura, açúcar e sal. Tenha sempre frutas, verduras e legumes na alimentação diária."
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 

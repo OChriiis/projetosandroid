@@ -7,7 +7,7 @@ import android.widget.TextView
 class ResulatdoImcActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_resulatdo_imc)
+        setContentView(R.layout.activity_resultado_imc)
 
         val txtImc: TextView = findViewById(R.id.text_view_imc)
         val txtStatus: TextView = findViewById(R.id.text_view_status)
