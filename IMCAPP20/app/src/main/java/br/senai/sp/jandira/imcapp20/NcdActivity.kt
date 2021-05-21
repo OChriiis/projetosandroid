@@ -17,7 +17,6 @@ class NcdActivity : AppCompatActivity() {
         val spinnerIdade: Spinner = findViewById(R.id.spinner_idade)
         val spinnerNvlAtv: Spinner = findViewById(R.id.spinner_nvl_atv)
         val radiogroup: RadioGroup = findViewById(R.id.radio_group)
-<<<<<<< HEAD
         val radioFeminino: RadioButton = findViewById(R.id.Feminino)
         val radioMasculino: RadioButton = findViewById(R.id.Masculino)
 
@@ -54,35 +53,7 @@ class NcdActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(this, "Escolha o seu sexo!", Toast.LENGTH_SHORT).show()
                 }
-=======
-        val rbFeminino: RadioButton = findViewById(R.id.)
-
-        val itemSelecionado = radiogroup.checkedRadioButtonId
-
-        val spinnerSlcIdade = spinnerIdade.selectedItem.toString()
-        val spinnerSlcNvlAtv = spinnerNvlAtv.selectedItem.toString()
-        val spinnerSelecionadoNvlAtv = spinnerNvlAtv.selectedItemPosition
-        val spinnerSelecionadoIdade = spinnerIdade.selectedItemPosition
-
-        btnCalcular.setOnClickListener {
-            if (ed_peso.text.isEmpty()) {
-                ed_peso.error = "Este campo é obrigatório!"
             }
-            if (radioFeminino.isChecked()){
-                val genero = 'f'
-                intent.putExtra("genero", genero)
-            }else{
-                val genero = 'm'
-                intent.putExtra("genero", genero)
-            }
-            intent.putExtra("peso", peso)
-            intent.putExtra("nivelAtividade", nivelAtividade)
-            intent.putExtra("faixaIdade", faixaEtaria)
-            startActivity(intent)
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
-
-            }
-
         }
     }
 }

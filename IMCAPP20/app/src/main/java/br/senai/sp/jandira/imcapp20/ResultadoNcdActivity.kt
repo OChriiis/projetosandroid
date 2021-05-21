@@ -9,7 +9,6 @@ class ResultadoNcdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado_ncd)
 
-<<<<<<< HEAD
         val txtNcd: TextView = findViewById(R.id.text_view_ncd)
         val txtDica: TextView =findViewById(R.id.text_view_dica)
 
@@ -25,11 +24,5 @@ class ResultadoNcdActivity : AppCompatActivity() {
         txtDica.text = getdicaDoDia()
 
 
-=======
-        val txtImc: TextView = findViewById(R.id.text_view_imc)
-        val txtStatus: TextView = findViewById(R.id.text_view_status)
-        val txtStatusRisk: TextView = findViewById(R.id.text_view_frase_status)
-        val txtDica: TextView = findViewById(R.id.text_view_dica)
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
     }
 }

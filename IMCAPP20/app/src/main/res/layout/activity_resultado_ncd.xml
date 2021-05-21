@@ -5,27 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:fillViewport="true">
-=======
-    android:clipToPadding="true"
-    android:fillViewport="true"
-    android:scrollbarStyle="insideInset">
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-<<<<<<< HEAD
-        android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        tools:context=".ResulatdoImcActivity">
-=======
         android:background="@color/backgroundColor"
         android:orientation="vertical"
-        tools:context=".ResultadoNcdActivity">
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
+        tools:context=".ResulatdoImcActivity">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -44,24 +32,13 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                     android:layout_gravity="center"
+                    android:gravity="center"
                     android:layout_marginTop="32dp"
                     android:paddingTop="10dp"
                     android:text="Seu gasto calórico diário é de aprox.:"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="24sp"
-                    android:gravity="center"/>
-=======
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="32dp"
-                    android:gravity="center"
-                    android:importantForAutofill="auto"
-                    android:paddingTop="10dp"
-                    android:text="@string/resultadoncd"
-                    android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textSize="24sp" />
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="180dp"
@@ -87,24 +64,15 @@
                             android:textColor="@android:color/white" />
 
                         <TextView
-<<<<<<< HEAD
                             android:id="@+id/text_view_status"
-=======
-                            android:id="@+id/text_view_status_ncd"
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Calorias por dia."
+                            android:text="Calorias por dia!"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorAccent" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-<<<<<<< HEAD
-
-=======
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -113,11 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-<<<<<<< HEAD
             android:layout_marginTop="80dp"
-=======
-            android:layout_marginTop="32dp"
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
             android:drawableStart="@drawable/ic_info"
             android:drawablePadding="12dp"
             android:text="Dica!"
@@ -126,11 +90,7 @@
             android:textSize="32sp" />
 
         <TextView
-<<<<<<< HEAD
             android:id="@+id/text_view_dica"
-=======
-            android:id="@+id/text_view_dica_ncd"
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -138,11 +98,7 @@
             android:padding="40dp"
             android:text="Alimente-se melhor (1) Reduza alimentos com gordura, açúcar e sal. Tenha sempre frutas, verduras e legumes na alimentação diária."
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-<<<<<<< HEAD
-            android:textColor="@color/colorAccent" />
-=======
             android:textColor="@android:color/white" />
->>>>>>> d444078f6359640b57a71b9819dafbf7f90e4f40
 
     </LinearLayout>
 
